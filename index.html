@@ -3,12 +3,13 @@
     <title>Angular Web App</title>
   </head>
   <body>
-    <h1>Hello talaat23 from Angular</h1>
+    <h1>Hello talaat53 from Angular</h1>
     <button onclick="sendMessageToFlutter()">Send Message to Flutter</button>
     <script>
       function sendMessageToFlutter() {
         const message = 'Hello1 talaat from Angular';
         window.postMessage(message, 'https://jeeeko.github.io/testPostJsMessage/');
+        window.FlutterBridge.postMessage(message, 'https://jeeeko.github.io/testPostJsMessage/');
         FlutterBridge.postMessage(message);
       }
     </script>
