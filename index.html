@@ -6,6 +6,9 @@
     <h1>Hello talaat63 from Angular</h1>
     <button id ='button' onclick="sendMessageToFlutter()">Send Message to Flutter</button>
     <script>
+        function sendData(data) {
+	window.postMessage(data, '*');
+	}
       function sendMessageToFlutter() {
         const message = 'Hello1 talaat from Angular';
         window.postMessage(message, '*');
