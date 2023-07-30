@@ -4,12 +4,17 @@
   </head>
   <body>
     <h1>Hello talaat63 from Angular</h1>
-    <button onclick="sendMessageToFlutter()">Send Message to Flutter</button>
+    <button id ='button' onclick="sendMessageToFlutter()">Send Message to Flutter</button>
     <script>
       function sendMessageToFlutter() {
         const message = 'Hello1 talaat from Angular';
         window.postMessage(message, '*');
       }
+      window.onload = function () {
+        const message = 'Hello1 talaat from kassem';
+      document.getElementById('button').onclick = function () {
+        sendData(message);
+      }}
     </script>
   </body>
 </html>
