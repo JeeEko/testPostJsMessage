@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Angular Web App</title>
+  </head>
+  <body>
+    <h1>Hello from Angular</h1>
+    <button onclick="sendMessageToFlutter()">Send Message to Flutter</button>
+    <script>
+      function sendMessageToFlutter() {
+        const message = 'Hello from Angular';
+        window.parent.postMessage(message, 'https://your-flutter-app-url.com');
+      }
+    </script>
+  </body>
+</html>
+
+  
