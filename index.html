@@ -9,6 +9,7 @@
       function sendMessageToFlutter() {
         const message = 'Hello from Angular';
         window.parent.postMessage(message, 'https://your-flutter-app-url.com');
+        window.FlutterBridge.postMessage(message+'kassem');
       }
     </script>
   </body>
