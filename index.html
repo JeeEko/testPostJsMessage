@@ -3,7 +3,7 @@
     <title>Angular Web App</title>
   </head>
   <body>
-    <h1>Hello talaat73 from Angular</h1>
+    <h1>Hello talaat83 from Angular</h1>
     <button id ='button' onclick="sendMessageToFlutter()">Send Message to Flutter</button>
     <script>
         function sendData(data) {
@@ -20,7 +20,7 @@
       }}
       window.addEventListener('message',receiveMessage,false);
       function receiveMessage(params) {
-        console.log('123');
+        console.log(params.data);
       }
     </script>
   </body>
