@@ -9,7 +9,6 @@
       function sendMessageToFlutter() {
         const message = 'Hello1 talaat from Angular';
         window.postMessage(message, 'https://jeeeko.github.io/testPostJsMessage/');
-        window.postMessage(message, 'FlutterBridge');
         FlutterBridge.postMessage(message);
       }
     </script>
