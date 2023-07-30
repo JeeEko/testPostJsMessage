@@ -9,7 +9,10 @@
       window.onload = function () {
         const message = 'Hello1 talaat from kassem';
       document.getElementById('button').onclick = function () {
-        FlutterBridge.postMessage(data);
+        if(Talaat)
+        Talaat.postMessage(data);
+        else
+        console.log('Talaat channel not defined')
       }}
 
 
