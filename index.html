@@ -8,8 +8,7 @@
     <script>
       function sendMessageToFlutter() {
         const message = 'Hello from Angular';
-        window.parent.postMessage(message, 'https://jeeeko.github.io/testPostJsMessage/');
-        window.FlutterBridge.postMessage(message+'kassem');
+        window.postMessage(message, 'https://jeeeko.github.io/testPostJsMessage/');
       }
     </script>
   </body>
