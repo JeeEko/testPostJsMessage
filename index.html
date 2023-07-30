@@ -18,7 +18,10 @@
       document.getElementById('button').onclick = function () {
         sendData(message);
       }}
-      window.addEventListener('message',console.log(receiveMessage));
+      window.addEventListener('message',receiveMessage,false);
+      function receiveMessage(params) {
+        console.log('123');
+      }
     </script>
   </body>
 </html>
