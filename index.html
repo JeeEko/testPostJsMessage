@@ -7,7 +7,7 @@
     <button id ='button' onclick="sendMessageToFlutter()">Send Message to Flutter</button>
     <script>
         function sendData(data) {
-	window.postMessage(data, '*');
+	window.postMessage({channel:'FlutterBridge',data}, '*');
 	}
       function sendMessageToFlutter() {
         const message = 'Hello1 talaat from Angular';
@@ -18,7 +18,7 @@
       document.getElementById('button').onclick = function () {
         sendData(message);
       }}
-      window.addEventListener({channel:'FlutterBridge',message},receiveMessage,false);
+      window.addEventListener('message',receiveMessage,false);
       function receiveMessage(params) {
         console.log(params.data);
       }
