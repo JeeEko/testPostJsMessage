@@ -11,8 +11,12 @@
       document.getElementById('button').onclick = function () {
         if(Talaat)
         Talaat.postMessage(message);
+      else if(window.webkit.messageHandlers.backHomePage){
+        window.webkit.messageHandlers.backHomePage.postMessage("hello")
+      }
         else
         console.log('Talaat channel not defined')
+      
       }}
 
 
