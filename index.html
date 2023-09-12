@@ -10,7 +10,7 @@
         const message = 'Hello1 talaat from kassem';
       document.getElementById('button').onclick = function () {
         
-        window.webkit.messageHandlers.backHomePage.postMessage({status:1,orderId:123123,merchantRedirectUrl:"http:www.google.com"});
+        window.webkit.messageHandlers.backHomePage.postMessage(JSON.stringify({status:1,orderId:123123,merchantRedirectUrl:"http:www.google.com"}));
       
         
       }}
