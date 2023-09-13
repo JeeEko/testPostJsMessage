@@ -3,15 +3,15 @@
     <title>Angular Web App</title>
   </head>
   <body>
-    <h1>Hello Bahi5 from Angular</h1>
+    <h1>Hello Bahi5 w talaat1 from Angular</h1>
     <button id ='button'>Send Message to Flutter</button>
     <script>
       window.onload = function () {
         const message = 'Hello1 talaat from kassem';
       document.getElementById('button').onclick = function () {
         
-        window.webkit.messageHandlers.backHomePage.postMessage(JSON.stringify({status:1,orderId:123123,merchantRedirectUrl:"http:www.google.com"}));
-      
+        // window.webkit.messageHandlers.backHomePage.postMessage(JSON.stringify({status:1,orderId:123123,merchantRedirectUrl:"http:www.google.com"}));
+        window.AndroidJsBridge.showMessageInNative("hello")
         
       }}
 
