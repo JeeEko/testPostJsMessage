@@ -3,7 +3,7 @@
     <title>Angular Web App</title>
   </head>
   <body>
-    <h1>Hello Bahi3 from Angular</h1>
+    <h1 id="test">Hello Bahi3 from Angular</h1>
     <button id ='button'>Send Message to Flutter</button>
     <script>
       window.onload = function () {
@@ -19,7 +19,8 @@
       window.addEventListener('message',receiveMessage,false);
         function receiveMessage(params) {
             debugger;
-        //console.log(params.data);
+            //console.log(params.data);
+            document.getElementById("test").innerHTML = "3enaaaab";
             console.log("wallllaaaa");
             alert("walaaa");
       }
