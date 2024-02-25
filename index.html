@@ -19,7 +19,11 @@
       window.addEventListener('message',receiveMessage,false);
         function receiveMessage(params) {
             debugger;
+            console.log(params);
             console.log(params.data);
+            //var x = JSON.parse(params.data);
+            //console.log("x value : "+x)
+            console.log(params.data.html);
             document.getElementById("test").innerHTML = params.data.html;
       }
 
