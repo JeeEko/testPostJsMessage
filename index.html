@@ -19,10 +19,8 @@
       window.addEventListener('message',receiveMessage,false);
         function receiveMessage(params) {
             debugger;
-            //console.log(params.data);
-            document.getElementById("test").innerHTML = params.data;
-            console.log("wallllaaaa");
-            alert(params.data);
+            console.log(params.data);
+            document.getElementById("test").innerHTML = params.data.html;
       }
 
     </script>
