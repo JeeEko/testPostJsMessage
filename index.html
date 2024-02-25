@@ -3,7 +3,7 @@
     <title>Angular Web App</title>
   </head>
   <body>
-    <h1 id="test">Hello Bahi5 and andrew from Angular</h1>
+    <h1 id="test">Hello Bahi6 and andrew from Angular</h1>
     <button id ='button'>Send Message to Flutter</button>
     <script>
       window.onload = function () {
@@ -21,9 +21,9 @@
             debugger;
             console.log(params);
             console.log(params.data);
-            //var x = JSON.parse(params.data);
-            //console.log("x value : "+x)
             console.log(params.data.html);
+            var x = JSON.parse(params.data);
+            console.log(x)
             document.getElementById("test").innerHTML = params.data.html;
       }
 
